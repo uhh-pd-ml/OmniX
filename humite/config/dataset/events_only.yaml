@@ -1,0 +1,33 @@
+# The events-only training set: the five COLLIDE-2V processes, with the token design of OmniX.
+_target_: humite.data.config.DataConfig
+defaults:
+  - tokens
+  - /dataset@members.c2v_qcd_inc: collide2v
+  - /dataset@members.c2v_qcd_bb: collide2v
+  - /dataset@members.c2v_tt_lep: collide2v
+  - /dataset@members.c2v_tt_semi: collide2v
+  - /dataset@members.c2v_tt_had: collide2v
+  - _self_
+
+max_particles: 521 # the largest COLLIDE-2V event
+
+members:
+  c2v_qcd_inc: { process: QCD_HT50toInf }
+  c2v_qcd_bb: { process: QCD_HT50tobb }
+  c2v_tt_lep: { process: tt0123j_5f_ckm_LO_MLM_leptonic }
+  c2v_tt_semi: { process: tt0123j_5f_ckm_LO_MLM_semiLeptonic }
+  c2v_tt_had: { process: tt0123j_5f_ckm_LO_MLM_hadronic }
+
+# five QCD batches per QCD bb batch and two of each ttbar decay
+mix_weights:
+  c2v_qcd_inc: 5
+  c2v_qcd_bb: 1
+  c2v_tt_lep: 2
+  c2v_tt_semi: 2
+  c2v_tt_had: 2
+val_mix_weights:
+  c2v_qcd_inc: 1
+  c2v_qcd_bb: 1
+  c2v_tt_lep: 1
+  c2v_tt_semi: 1
+  c2v_tt_had: 1

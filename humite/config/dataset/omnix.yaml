@@ -1,0 +1,40 @@
+# The OmniX training set: JetClass jets and COLLIDE-2V events. Every batch holds events of one
+# member, so a member's share of the training is its share of the batches.
+_target_: humite.data.config.DataConfig
+defaults:
+  - tokens
+  - /dataset@members.jetclass: jetclass
+  - /dataset@members.c2v_qcd_inc: collide2v
+  - /dataset@members.c2v_qcd_bb: collide2v
+  - /dataset@members.c2v_tt_lep: collide2v
+  - /dataset@members.c2v_tt_semi: collide2v
+  - /dataset@members.c2v_tt_had: collide2v
+  - _self_
+
+max_particles: 521 # the largest COLLIDE-2V event
+
+members:
+  c2v_qcd_inc: { process: QCD_HT50toInf }
+  c2v_qcd_bb: { process: QCD_HT50tobb }
+  c2v_tt_lep: { process: tt0123j_5f_ckm_LO_MLM_leptonic }
+  c2v_tt_semi: { process: tt0123j_5f_ckm_LO_MLM_semiLeptonic }
+  c2v_tt_had: { process: tt0123j_5f_ckm_LO_MLM_hadronic }
+
+# Training: the COLLIDE-2V members' sizes in million events, and JetClass weighted so that both
+# datasets are passed through at the same pace. This gives a repeating pattern of 62 batches:
+# 50 JetClass, 5 QCD, 1 QCD bb and 2 of each ttbar decay.
+mix_weights:
+  jetclass: 125.2
+  c2v_qcd_inc: 11.44
+  c2v_qcd_bb: 2.49
+  c2v_tt_lep: 4.83
+  c2v_tt_semi: 4.83
+  c2v_tt_had: 4.81
+# Validation: 4 JetClass batches per batch of each COLLIDE-2V process.
+val_mix_weights:
+  jetclass: 4
+  c2v_qcd_inc: 1
+  c2v_qcd_bb: 1
+  c2v_tt_lep: 1
+  c2v_tt_semi: 1
+  c2v_tt_had: 1

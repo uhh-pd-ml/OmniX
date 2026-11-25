@@ -1,0 +1,20 @@
+# @package _global_
+#
+# The jets-only model: OmniX's architecture and recipe on JetClass alone.
+# The paper model: plateau S = 974,848, end 1,171,456 steps.
+defaults:
+  - override /dataset: jets_only
+  - override /model: jets_only
+
+experiment_name: jets_only
+
+trainer:
+  limit_val_batches: 32
+
+callbacks:
+  best_jetclass_class:
+    _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    dirpath: ${output_dir}/checkpoints
+    filename: best_jetclass_class_{epoch:03d}
+    monitor: val/cls_jetclass_class_auroc
+    mode: max

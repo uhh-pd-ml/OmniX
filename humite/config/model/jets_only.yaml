@@ -1,0 +1,8 @@
+# The jets-only model: OmniX without the jet-flavour task (107 M parameters)
+defaults:
+  - omnix
+
+n_condition_codes: 10 # the JetClass jet types
+tasks:
+  - { name: jetclass_class, mode: event, num_classes: 10, label: jc_label }
+jet_decoder: null

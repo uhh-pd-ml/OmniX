@@ -1,0 +1,20 @@
+# @package _global_
+#
+# The events-only model: OmniX's architecture and recipe on COLLIDE-2V alone.
+# The paper model: plateau S = 466,944, end 565,248 steps.
+defaults:
+  - override /dataset: events_only
+  - override /model: events_only
+
+experiment_name: events_only
+
+trainer:
+  limit_val_batches: 40 # per GPU: 8 batches of each process
+
+callbacks:
+  best_c2v_flavor:
+    _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    dirpath: ${output_dir}/checkpoints
+    filename: best_c2v_flavor_{epoch:03d}
+    monitor: val/cls_c2v_flavor_auroc
+    mode: max

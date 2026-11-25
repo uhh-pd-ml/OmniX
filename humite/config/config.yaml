@@ -1,0 +1,59 @@
+defaults:
+  - _self_
+  - dataset: omnix
+  - model: omnix
+  - logger: csv
+
+seed: 44
+experiment_name: omnix
+run_name: ${now:%Y-%m-%d_%H-%M-%S}
+output_dir: ${oc.env:HUMITE_OUTPUT_DIR,./outputs}/${experiment_name}/${run_name}
+# checkpoint to continue from (weights, optimizer state and position in the data)
+resume_ckpt_path: null
+
+data:
+  batch_size: 128 # per GPU
+  num_workers: 8
+  prefetch_factor: 4
+
+trainer:
+  _target_: lightning.Trainer
+  devices: 1
+  strategy: auto
+  precision: bf16-mixed
+  max_steps: 2457600
+  limit_train_batches: 8192 # one "epoch" = 8,192 steps
+  val_check_interval: 2048
+  limit_val_batches: 72
+  gradient_clip_val: 1.0
+  log_every_n_steps: 50
+  num_sanity_val_steps: 0
+  enable_progress_bar: false
+  enable_model_summary: false
+  default_root_dir: ${output_dir}
+
+callbacks:
+  # every epoch, and last.ckpt for resuming
+  steps:
+    _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    dirpath: ${output_dir}/checkpoints
+    filename: step_{step:07d}
+    every_n_train_steps: ${trainer.limit_train_batches}
+    save_top_k: -1
+    save_last: true
+  # the epoch with the best validation token loss over all members
+  member_monitor:
+    _target_: humite.callbacks.MemberBalancedMonitor
+  best_tokens:
+    _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    dirpath: ${output_dir}/checkpoints
+    filename: best_tokens_{epoch:03d}
+    monitor: val/member_max
+    mode: min
+  lr_monitor:
+    _target_: lightning.pytorch.callbacks.LearningRateMonitor
+    logging_interval: step
+
+hydra:
+  run:
+    dir: ${output_dir}

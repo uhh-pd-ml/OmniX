@@ -1,0 +1,3076 @@
+{
+ "events_only": {
+  "model.class_heads.c2v_flavor.mlp.0.bias": [
+   256
+  ],
+  "model.class_heads.c2v_flavor.mlp.0.weight": [
+   256,
+   768
+  ],
+  "model.class_heads.c2v_flavor.mlp.2.bias": [
+   256
+  ],
+  "model.class_heads.c2v_flavor.mlp.2.weight": [
+   256,
+   256
+  ],
+  "model.class_heads.c2v_flavor.mlp.4.bias": [
+   3
+  ],
+  "model.class_heads.c2v_flavor.mlp.4.weight": [
+   3,
+   256
+  ],
+  "model.condition_embedding.weight": [
+   16,
+   768
+  ],
+  "model.count_embedding.weight": [
+   523,
+   768
+  ],
+  "model.count_head.proj.bias": [
+   523
+  ],
+  "model.count_head.proj.weight": [
+   523,
+   768
+  ],
+  "model.count_tag": [
+   768
+  ],
+  "model.feature_embedding.embeddings.d0.weight": [
+   258,
+   64
+  ],
+  "model.feature_embedding.embeddings.dz.weight": [
+   258,
+   64
+  ],
+  "model.feature_embedding.embeddings.eta.weight": [
+   512,
+   64
+  ],
+  "model.feature_embedding.embeddings.jet_idx.weight": [
+   23,
+   64
+  ],
+  "model.feature_embedding.embeddings.phi.weight": [
+   512,
+   64
+  ],
+  "model.feature_embedding.embeddings.pid.weight": [
+   10,
+   64
+  ],
+  "model.feature_embedding.embeddings.pt.weight": [
+   1024,
+   64
+  ],
+  "model.feature_embedding.norms.d0.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.d0.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.dz.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.dz.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.eta.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.eta.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.jet_idx.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.jet_idx.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.phi.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.phi.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.pid.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.pid.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.pt.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.pt.weight": [
+   64
+  ],
+  "model.feature_heads.d0.proj.bias": [
+   258
+  ],
+  "model.feature_heads.d0.proj.weight": [
+   258,
+   768
+  ],
+  "model.feature_heads.dz.proj.bias": [
+   258
+  ],
+  "model.feature_heads.dz.proj.weight": [
+   258,
+   768
+  ],
+  "model.feature_heads.eta.proj.bias": [
+   512
+  ],
+  "model.feature_heads.eta.proj.weight": [
+   512,
+   768
+  ],
+  "model.feature_heads.jet_idx.proj.bias": [
+   23
+  ],
+  "model.feature_heads.jet_idx.proj.weight": [
+   23,
+   768
+  ],
+  "model.feature_heads.phi.proj.bias": [
+   512
+  ],
+  "model.feature_heads.phi.proj.weight": [
+   512,
+   768
+  ],
+  "model.feature_heads.pid.proj.bias": [
+   10
+  ],
+  "model.feature_heads.pid.proj.weight": [
+   10,
+   768
+  ],
+  "model.feature_heads.pt.proj.bias": [
+   1024
+  ],
+  "model.feature_heads.pt.proj.weight": [
+   1024,
+   768
+  ],
+  "model.feature_mode_embedding.weight": [
+   2,
+   768
+  ],
+  "model.feature_projection.bias": [
+   768
+  ],
+  "model.feature_projection.weight": [
+   768,
+   448
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.ffn.w1.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.0.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.0.ffn.w2.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.0.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.0.ffn.w3.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.jet_decoder.blocks.0.norm_cross.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_cross.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_ffn.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_ffn.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_keys.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_keys.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_self.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_self.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.ffn.w1.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.1.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.1.ffn.w2.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.1.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.1.ffn.w3.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.jet_decoder.blocks.1.norm_cross.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_cross.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_ffn.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_ffn.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_keys.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_keys.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_self.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_self.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.ffn.w1.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.2.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.2.ffn.w2.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.2.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.2.ffn.w3.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.jet_decoder.blocks.2.norm_cross.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_cross.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_ffn.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_ffn.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_keys.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_keys.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_self.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_self.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.membership_bias": [
+   3,
+   8,
+   4
+  ],
+  "model.jet_decoder.norm.bias": [
+   768
+  ],
+  "model.jet_decoder.norm.weight": [
+   768
+  ],
+  "model.jet_decoder.pair_mlp.0.bias": [
+   32
+  ],
+  "model.jet_decoder.pair_mlp.0.weight": [
+   32,
+   3
+  ],
+  "model.jet_decoder.pair_mlp.2.bias": [
+   24
+  ],
+  "model.jet_decoder.pair_mlp.2.weight": [
+   24,
+   32
+  ],
+  "model.jet_decoder.seed_mlp.0.bias": [
+   768
+  ],
+  "model.jet_decoder.seed_mlp.0.weight": [
+   768,
+   6
+  ],
+  "model.jet_decoder.seed_mlp.2.bias": [
+   768
+  ],
+  "model.jet_decoder.seed_mlp.2.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.unlabeled": [
+   768
+  ],
+  "model.jet_remainder_mlp.0.bias": [
+   64
+  ],
+  "model.jet_remainder_mlp.0.weight": [
+   64,
+   7
+  ],
+  "model.jet_remainder_mlp.2.bias": [
+   768
+  ],
+  "model.jet_remainder_mlp.2.weight": [
+   768,
+   64
+  ],
+  "model.kinematics_mlp.0.bias": [
+   128
+  ],
+  "model.kinematics_mlp.0.weight": [
+   128,
+   3
+  ],
+  "model.kinematics_mlp.2.bias": [
+   512
+  ],
+  "model.kinematics_mlp.2.weight": [
+   512,
+   128
+  ],
+  "model.kinematics_mlp.4.bias": [
+   768
+  ],
+  "model.kinematics_mlp.4.weight": [
+   768,
+   512
+  ],
+  "model.order_embedding.weight": [
+   32,
+   768
+  ],
+  "model.pair_bias.mlp.0.bias": [
+   64
+  ],
+  "model.pair_bias.mlp.0.weight": [
+   64,
+   8
+  ],
+  "model.pair_bias.mlp.2.bias": [
+   64
+  ],
+  "model.pair_bias.mlp.2.weight": [
+   64,
+   64
+  ],
+  "model.pair_bias.mlp.4.bias": [
+   64
+  ],
+  "model.pair_bias.mlp.4.weight": [
+   64,
+   64
+  ],
+  "model.pair_bias.mlp.6.bias": [
+   8
+  ],
+  "model.pair_bias.mlp.6.weight": [
+   8,
+   64
+  ],
+  "model.plan_head.embeddings.jet_dphi.weight": [
+   3144,
+   768
+  ],
+  "model.plan_head.embeddings.jet_m.weight": [
+   514,
+   768
+  ],
+  "model.plan_head.embeddings.jet_pt.weight": [
+   3487,
+   768
+  ],
+  "model.plan_head.embeddings.jet_rapidity.weight": [
+   4002,
+   768
+  ],
+  "model.plan_head.embeddings.n_const.weight": [
+   258,
+   768
+  ],
+  "model.plan_head.heads.jet_dphi.proj.bias": [
+   3144
+  ],
+  "model.plan_head.heads.jet_dphi.proj.weight": [
+   3144,
+   768
+  ],
+  "model.plan_head.heads.jet_m.proj.bias": [
+   514
+  ],
+  "model.plan_head.heads.jet_m.proj.weight": [
+   514,
+   768
+  ],
+  "model.plan_head.heads.jet_pt.proj.bias": [
+   3487
+  ],
+  "model.plan_head.heads.jet_pt.proj.weight": [
+   3487,
+   768
+  ],
+  "model.plan_head.heads.jet_rapidity.proj.bias": [
+   4002
+  ],
+  "model.plan_head.heads.jet_rapidity.proj.weight": [
+   4002,
+   768
+  ],
+  "model.plan_head.heads.n_const.proj.bias": [
+   258
+  ],
+  "model.plan_head.heads.n_const.proj.weight": [
+   258,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_dphi.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_m.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_pt.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_rapidity.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.n_const.weight": [
+   20,
+   768
+  ],
+  "model.source_embedding.weight": [
+   3,
+   768
+  ],
+  "model.transformer.final_norm.bias": [
+   768
+  ],
+  "model.transformer.final_norm.weight": [
+   768
+  ],
+  "model.transformer.layers.0.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.0.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.0.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.0.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.0.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.0.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.0.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.0.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.0.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.0.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.0.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.0.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.0.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.0.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.1.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.1.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.1.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.1.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.1.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.1.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.1.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.1.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.1.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.1.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.1.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.1.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.1.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.1.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.2.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.2.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.2.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.2.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.2.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.2.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.2.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.2.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.2.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.2.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.2.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.2.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.2.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.2.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.3.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.3.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.3.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.3.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.3.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.3.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.3.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.3.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.3.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.3.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.3.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.3.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.3.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.3.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.4.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.4.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.4.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.4.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.4.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.4.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.4.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.4.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.4.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.4.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.4.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.4.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.4.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.4.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.5.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.5.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.5.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.5.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.5.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.5.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.5.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.5.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.5.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.5.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.5.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.5.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.5.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.5.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.6.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.6.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.6.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.6.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.6.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.6.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.6.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.6.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.6.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.6.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.6.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.6.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.6.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.6.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.7.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.7.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.7.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.7.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.7.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.7.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.7.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.7.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.7.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.7.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.7.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.7.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.7.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.7.norm2.weight": [
+   768
+  ]
+ },
+ "jets_only": {
+  "model.class_heads.jetclass_class.mlp.0.bias": [
+   256
+  ],
+  "model.class_heads.jetclass_class.mlp.0.weight": [
+   256,
+   768
+  ],
+  "model.class_heads.jetclass_class.mlp.2.bias": [
+   256
+  ],
+  "model.class_heads.jetclass_class.mlp.2.weight": [
+   256,
+   256
+  ],
+  "model.class_heads.jetclass_class.mlp.4.bias": [
+   10
+  ],
+  "model.class_heads.jetclass_class.mlp.4.weight": [
+   10,
+   256
+  ],
+  "model.class_query.jetclass_class": [
+   768
+  ],
+  "model.condition_embedding.weight": [
+   11,
+   768
+  ],
+  "model.count_embedding.weight": [
+   185,
+   768
+  ],
+  "model.count_head.proj.bias": [
+   185
+  ],
+  "model.count_head.proj.weight": [
+   185,
+   768
+  ],
+  "model.count_tag": [
+   768
+  ],
+  "model.feature_embedding.embeddings.d0.weight": [
+   258,
+   64
+  ],
+  "model.feature_embedding.embeddings.dz.weight": [
+   258,
+   64
+  ],
+  "model.feature_embedding.embeddings.eta.weight": [
+   512,
+   64
+  ],
+  "model.feature_embedding.embeddings.jet_idx.weight": [
+   23,
+   64
+  ],
+  "model.feature_embedding.embeddings.phi.weight": [
+   512,
+   64
+  ],
+  "model.feature_embedding.embeddings.pid.weight": [
+   10,
+   64
+  ],
+  "model.feature_embedding.embeddings.pt.weight": [
+   1024,
+   64
+  ],
+  "model.feature_embedding.norms.d0.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.d0.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.dz.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.dz.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.eta.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.eta.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.jet_idx.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.jet_idx.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.phi.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.phi.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.pid.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.pid.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.pt.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.pt.weight": [
+   64
+  ],
+  "model.feature_heads.d0.proj.bias": [
+   258
+  ],
+  "model.feature_heads.d0.proj.weight": [
+   258,
+   768
+  ],
+  "model.feature_heads.dz.proj.bias": [
+   258
+  ],
+  "model.feature_heads.dz.proj.weight": [
+   258,
+   768
+  ],
+  "model.feature_heads.eta.proj.bias": [
+   512
+  ],
+  "model.feature_heads.eta.proj.weight": [
+   512,
+   768
+  ],
+  "model.feature_heads.jet_idx.proj.bias": [
+   23
+  ],
+  "model.feature_heads.jet_idx.proj.weight": [
+   23,
+   768
+  ],
+  "model.feature_heads.phi.proj.bias": [
+   512
+  ],
+  "model.feature_heads.phi.proj.weight": [
+   512,
+   768
+  ],
+  "model.feature_heads.pid.proj.bias": [
+   10
+  ],
+  "model.feature_heads.pid.proj.weight": [
+   10,
+   768
+  ],
+  "model.feature_heads.pt.proj.bias": [
+   1024
+  ],
+  "model.feature_heads.pt.proj.weight": [
+   1024,
+   768
+  ],
+  "model.feature_mode_embedding.weight": [
+   2,
+   768
+  ],
+  "model.feature_projection.bias": [
+   768
+  ],
+  "model.feature_projection.weight": [
+   768,
+   448
+  ],
+  "model.jet_remainder_mlp.0.bias": [
+   64
+  ],
+  "model.jet_remainder_mlp.0.weight": [
+   64,
+   7
+  ],
+  "model.jet_remainder_mlp.2.bias": [
+   768
+  ],
+  "model.jet_remainder_mlp.2.weight": [
+   768,
+   64
+  ],
+  "model.kinematics_mlp.0.bias": [
+   128
+  ],
+  "model.kinematics_mlp.0.weight": [
+   128,
+   3
+  ],
+  "model.kinematics_mlp.2.bias": [
+   512
+  ],
+  "model.kinematics_mlp.2.weight": [
+   512,
+   128
+  ],
+  "model.kinematics_mlp.4.bias": [
+   768
+  ],
+  "model.kinematics_mlp.4.weight": [
+   768,
+   512
+  ],
+  "model.order_embedding.weight": [
+   32,
+   768
+  ],
+  "model.pair_bias.mlp.0.bias": [
+   64
+  ],
+  "model.pair_bias.mlp.0.weight": [
+   64,
+   8
+  ],
+  "model.pair_bias.mlp.2.bias": [
+   64
+  ],
+  "model.pair_bias.mlp.2.weight": [
+   64,
+   64
+  ],
+  "model.pair_bias.mlp.4.bias": [
+   64
+  ],
+  "model.pair_bias.mlp.4.weight": [
+   64,
+   64
+  ],
+  "model.pair_bias.mlp.6.bias": [
+   8
+  ],
+  "model.pair_bias.mlp.6.weight": [
+   8,
+   64
+  ],
+  "model.plan_head.embeddings.jet_dphi.weight": [
+   3144,
+   768
+  ],
+  "model.plan_head.embeddings.jet_m.weight": [
+   514,
+   768
+  ],
+  "model.plan_head.embeddings.jet_pt.weight": [
+   3487,
+   768
+  ],
+  "model.plan_head.embeddings.jet_rapidity.weight": [
+   4002,
+   768
+  ],
+  "model.plan_head.embeddings.n_const.weight": [
+   258,
+   768
+  ],
+  "model.plan_head.heads.jet_dphi.proj.bias": [
+   3144
+  ],
+  "model.plan_head.heads.jet_dphi.proj.weight": [
+   3144,
+   768
+  ],
+  "model.plan_head.heads.jet_m.proj.bias": [
+   514
+  ],
+  "model.plan_head.heads.jet_m.proj.weight": [
+   514,
+   768
+  ],
+  "model.plan_head.heads.jet_pt.proj.bias": [
+   3487
+  ],
+  "model.plan_head.heads.jet_pt.proj.weight": [
+   3487,
+   768
+  ],
+  "model.plan_head.heads.jet_rapidity.proj.bias": [
+   4002
+  ],
+  "model.plan_head.heads.jet_rapidity.proj.weight": [
+   4002,
+   768
+  ],
+  "model.plan_head.heads.n_const.proj.bias": [
+   258
+  ],
+  "model.plan_head.heads.n_const.proj.weight": [
+   258,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_dphi.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_m.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_pt.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_rapidity.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.n_const.weight": [
+   20,
+   768
+  ],
+  "model.read_head.blocks.0.attn.in_proj_bias": [
+   2304
+  ],
+  "model.read_head.blocks.0.attn.in_proj_weight": [
+   2304,
+   768
+  ],
+  "model.read_head.blocks.0.attn.out_proj.bias": [
+   768
+  ],
+  "model.read_head.blocks.0.attn.out_proj.weight": [
+   768,
+   768
+  ],
+  "model.read_head.blocks.0.ffn.w1.bias": [
+   3072
+  ],
+  "model.read_head.blocks.0.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.read_head.blocks.0.ffn.w2.bias": [
+   3072
+  ],
+  "model.read_head.blocks.0.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.read_head.blocks.0.ffn.w3.bias": [
+   768
+  ],
+  "model.read_head.blocks.0.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.read_head.blocks.0.norm2.bias": [
+   768
+  ],
+  "model.read_head.blocks.0.norm2.weight": [
+   768
+  ],
+  "model.read_head.blocks.0.norm_kv.bias": [
+   768
+  ],
+  "model.read_head.blocks.0.norm_kv.weight": [
+   768
+  ],
+  "model.read_head.blocks.0.norm_q.bias": [
+   768
+  ],
+  "model.read_head.blocks.0.norm_q.weight": [
+   768
+  ],
+  "model.read_head.blocks.1.attn.in_proj_bias": [
+   2304
+  ],
+  "model.read_head.blocks.1.attn.in_proj_weight": [
+   2304,
+   768
+  ],
+  "model.read_head.blocks.1.attn.out_proj.bias": [
+   768
+  ],
+  "model.read_head.blocks.1.attn.out_proj.weight": [
+   768,
+   768
+  ],
+  "model.read_head.blocks.1.ffn.w1.bias": [
+   3072
+  ],
+  "model.read_head.blocks.1.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.read_head.blocks.1.ffn.w2.bias": [
+   3072
+  ],
+  "model.read_head.blocks.1.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.read_head.blocks.1.ffn.w3.bias": [
+   768
+  ],
+  "model.read_head.blocks.1.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.read_head.blocks.1.norm2.bias": [
+   768
+  ],
+  "model.read_head.blocks.1.norm2.weight": [
+   768
+  ],
+  "model.read_head.blocks.1.norm_kv.bias": [
+   768
+  ],
+  "model.read_head.blocks.1.norm_kv.weight": [
+   768
+  ],
+  "model.read_head.blocks.1.norm_q.bias": [
+   768
+  ],
+  "model.read_head.blocks.1.norm_q.weight": [
+   768
+  ],
+  "model.source_embedding.weight": [
+   3,
+   768
+  ],
+  "model.transformer.final_norm.bias": [
+   768
+  ],
+  "model.transformer.final_norm.weight": [
+   768
+  ],
+  "model.transformer.layers.0.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.0.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.0.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.0.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.0.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.0.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.0.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.0.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.0.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.0.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.0.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.0.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.0.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.0.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.1.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.1.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.1.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.1.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.1.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.1.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.1.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.1.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.1.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.1.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.1.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.1.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.1.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.1.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.2.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.2.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.2.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.2.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.2.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.2.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.2.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.2.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.2.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.2.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.2.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.2.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.2.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.2.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.3.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.3.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.3.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.3.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.3.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.3.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.3.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.3.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.3.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.3.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.3.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.3.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.3.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.3.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.4.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.4.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.4.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.4.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.4.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.4.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.4.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.4.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.4.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.4.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.4.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.4.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.4.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.4.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.5.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.5.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.5.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.5.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.5.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.5.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.5.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.5.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.5.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.5.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.5.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.5.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.5.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.5.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.6.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.6.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.6.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.6.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.6.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.6.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.6.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.6.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.6.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.6.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.6.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.6.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.6.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.6.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.7.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.7.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.7.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.7.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.7.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.7.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.7.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.7.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.7.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.7.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.7.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.7.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.7.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.7.norm2.weight": [
+   768
+  ]
+ },
+ "omnix": {
+  "model.class_heads.c2v_flavor.mlp.0.bias": [
+   256
+  ],
+  "model.class_heads.c2v_flavor.mlp.0.weight": [
+   256,
+   768
+  ],
+  "model.class_heads.c2v_flavor.mlp.2.bias": [
+   256
+  ],
+  "model.class_heads.c2v_flavor.mlp.2.weight": [
+   256,
+   256
+  ],
+  "model.class_heads.c2v_flavor.mlp.4.bias": [
+   3
+  ],
+  "model.class_heads.c2v_flavor.mlp.4.weight": [
+   3,
+   256
+  ],
+  "model.class_heads.jetclass_class.mlp.0.bias": [
+   256
+  ],
+  "model.class_heads.jetclass_class.mlp.0.weight": [
+   256,
+   768
+  ],
+  "model.class_heads.jetclass_class.mlp.2.bias": [
+   256
+  ],
+  "model.class_heads.jetclass_class.mlp.2.weight": [
+   256,
+   256
+  ],
+  "model.class_heads.jetclass_class.mlp.4.bias": [
+   10
+  ],
+  "model.class_heads.jetclass_class.mlp.4.weight": [
+   10,
+   256
+  ],
+  "model.class_query.jetclass_class": [
+   768
+  ],
+  "model.condition_embedding.weight": [
+   16,
+   768
+  ],
+  "model.count_embedding.weight": [
+   523,
+   768
+  ],
+  "model.count_head.proj.bias": [
+   523
+  ],
+  "model.count_head.proj.weight": [
+   523,
+   768
+  ],
+  "model.count_tag": [
+   768
+  ],
+  "model.feature_embedding.embeddings.d0.weight": [
+   258,
+   64
+  ],
+  "model.feature_embedding.embeddings.dz.weight": [
+   258,
+   64
+  ],
+  "model.feature_embedding.embeddings.eta.weight": [
+   512,
+   64
+  ],
+  "model.feature_embedding.embeddings.jet_idx.weight": [
+   23,
+   64
+  ],
+  "model.feature_embedding.embeddings.phi.weight": [
+   512,
+   64
+  ],
+  "model.feature_embedding.embeddings.pid.weight": [
+   10,
+   64
+  ],
+  "model.feature_embedding.embeddings.pt.weight": [
+   1024,
+   64
+  ],
+  "model.feature_embedding.norms.d0.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.d0.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.dz.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.dz.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.eta.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.eta.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.jet_idx.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.jet_idx.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.phi.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.phi.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.pid.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.pid.weight": [
+   64
+  ],
+  "model.feature_embedding.norms.pt.bias": [
+   64
+  ],
+  "model.feature_embedding.norms.pt.weight": [
+   64
+  ],
+  "model.feature_heads.d0.proj.bias": [
+   258
+  ],
+  "model.feature_heads.d0.proj.weight": [
+   258,
+   768
+  ],
+  "model.feature_heads.dz.proj.bias": [
+   258
+  ],
+  "model.feature_heads.dz.proj.weight": [
+   258,
+   768
+  ],
+  "model.feature_heads.eta.proj.bias": [
+   512
+  ],
+  "model.feature_heads.eta.proj.weight": [
+   512,
+   768
+  ],
+  "model.feature_heads.jet_idx.proj.bias": [
+   23
+  ],
+  "model.feature_heads.jet_idx.proj.weight": [
+   23,
+   768
+  ],
+  "model.feature_heads.phi.proj.bias": [
+   512
+  ],
+  "model.feature_heads.phi.proj.weight": [
+   512,
+   768
+  ],
+  "model.feature_heads.pid.proj.bias": [
+   10
+  ],
+  "model.feature_heads.pid.proj.weight": [
+   10,
+   768
+  ],
+  "model.feature_heads.pt.proj.bias": [
+   1024
+  ],
+  "model.feature_heads.pt.proj.weight": [
+   1024,
+   768
+  ],
+  "model.feature_mode_embedding.weight": [
+   2,
+   768
+  ],
+  "model.feature_projection.bias": [
+   768
+  ],
+  "model.feature_projection.weight": [
+   768,
+   448
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.cross_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.ffn.w1.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.0.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.0.ffn.w2.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.0.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.0.ffn.w3.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.jet_decoder.blocks.0.norm_cross.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_cross.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_ffn.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_ffn.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_keys.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_keys.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_self.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.norm_self.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.0.self_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.cross_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.ffn.w1.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.1.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.1.ffn.w2.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.1.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.1.ffn.w3.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.jet_decoder.blocks.1.norm_cross.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_cross.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_ffn.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_ffn.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_keys.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_keys.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_self.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.norm_self.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.1.self_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.cross_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.ffn.w1.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.2.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.2.ffn.w2.bias": [
+   3072
+  ],
+  "model.jet_decoder.blocks.2.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.jet_decoder.blocks.2.ffn.w3.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.jet_decoder.blocks.2.norm_cross.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_cross.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_ffn.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_ffn.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_keys.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_keys.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_self.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.norm_self.weight": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.k.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.k.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.out.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.out.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.q.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.q.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.v.bias": [
+   768
+  ],
+  "model.jet_decoder.blocks.2.self_attn.v.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.membership_bias": [
+   3,
+   8,
+   4
+  ],
+  "model.jet_decoder.norm.bias": [
+   768
+  ],
+  "model.jet_decoder.norm.weight": [
+   768
+  ],
+  "model.jet_decoder.pair_mlp.0.bias": [
+   32
+  ],
+  "model.jet_decoder.pair_mlp.0.weight": [
+   32,
+   3
+  ],
+  "model.jet_decoder.pair_mlp.2.bias": [
+   24
+  ],
+  "model.jet_decoder.pair_mlp.2.weight": [
+   24,
+   32
+  ],
+  "model.jet_decoder.seed_mlp.0.bias": [
+   768
+  ],
+  "model.jet_decoder.seed_mlp.0.weight": [
+   768,
+   6
+  ],
+  "model.jet_decoder.seed_mlp.2.bias": [
+   768
+  ],
+  "model.jet_decoder.seed_mlp.2.weight": [
+   768,
+   768
+  ],
+  "model.jet_decoder.unlabeled": [
+   768
+  ],
+  "model.jet_remainder_mlp.0.bias": [
+   64
+  ],
+  "model.jet_remainder_mlp.0.weight": [
+   64,
+   7
+  ],
+  "model.jet_remainder_mlp.2.bias": [
+   768
+  ],
+  "model.jet_remainder_mlp.2.weight": [
+   768,
+   64
+  ],
+  "model.kinematics_mlp.0.bias": [
+   128
+  ],
+  "model.kinematics_mlp.0.weight": [
+   128,
+   3
+  ],
+  "model.kinematics_mlp.2.bias": [
+   512
+  ],
+  "model.kinematics_mlp.2.weight": [
+   512,
+   128
+  ],
+  "model.kinematics_mlp.4.bias": [
+   768
+  ],
+  "model.kinematics_mlp.4.weight": [
+   768,
+   512
+  ],
+  "model.order_embedding.weight": [
+   32,
+   768
+  ],
+  "model.pair_bias.mlp.0.bias": [
+   64
+  ],
+  "model.pair_bias.mlp.0.weight": [
+   64,
+   8
+  ],
+  "model.pair_bias.mlp.2.bias": [
+   64
+  ],
+  "model.pair_bias.mlp.2.weight": [
+   64,
+   64
+  ],
+  "model.pair_bias.mlp.4.bias": [
+   64
+  ],
+  "model.pair_bias.mlp.4.weight": [
+   64,
+   64
+  ],
+  "model.pair_bias.mlp.6.bias": [
+   8
+  ],
+  "model.pair_bias.mlp.6.weight": [
+   8,
+   64
+  ],
+  "model.plan_head.embeddings.jet_dphi.weight": [
+   3144,
+   768
+  ],
+  "model.plan_head.embeddings.jet_m.weight": [
+   514,
+   768
+  ],
+  "model.plan_head.embeddings.jet_pt.weight": [
+   3487,
+   768
+  ],
+  "model.plan_head.embeddings.jet_rapidity.weight": [
+   4002,
+   768
+  ],
+  "model.plan_head.embeddings.n_const.weight": [
+   258,
+   768
+  ],
+  "model.plan_head.heads.jet_dphi.proj.bias": [
+   3144
+  ],
+  "model.plan_head.heads.jet_dphi.proj.weight": [
+   3144,
+   768
+  ],
+  "model.plan_head.heads.jet_m.proj.bias": [
+   514
+  ],
+  "model.plan_head.heads.jet_m.proj.weight": [
+   514,
+   768
+  ],
+  "model.plan_head.heads.jet_pt.proj.bias": [
+   3487
+  ],
+  "model.plan_head.heads.jet_pt.proj.weight": [
+   3487,
+   768
+  ],
+  "model.plan_head.heads.jet_rapidity.proj.bias": [
+   4002
+  ],
+  "model.plan_head.heads.jet_rapidity.proj.weight": [
+   4002,
+   768
+  ],
+  "model.plan_head.heads.n_const.proj.bias": [
+   258
+  ],
+  "model.plan_head.heads.n_const.proj.weight": [
+   258,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_dphi.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_m.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_pt.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.jet_rapidity.weight": [
+   20,
+   768
+  ],
+  "model.plan_head.slot_embeddings.n_const.weight": [
+   20,
+   768
+  ],
+  "model.read_head.blocks.0.attn.in_proj_bias": [
+   2304
+  ],
+  "model.read_head.blocks.0.attn.in_proj_weight": [
+   2304,
+   768
+  ],
+  "model.read_head.blocks.0.attn.out_proj.bias": [
+   768
+  ],
+  "model.read_head.blocks.0.attn.out_proj.weight": [
+   768,
+   768
+  ],
+  "model.read_head.blocks.0.ffn.w1.bias": [
+   3072
+  ],
+  "model.read_head.blocks.0.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.read_head.blocks.0.ffn.w2.bias": [
+   3072
+  ],
+  "model.read_head.blocks.0.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.read_head.blocks.0.ffn.w3.bias": [
+   768
+  ],
+  "model.read_head.blocks.0.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.read_head.blocks.0.norm2.bias": [
+   768
+  ],
+  "model.read_head.blocks.0.norm2.weight": [
+   768
+  ],
+  "model.read_head.blocks.0.norm_kv.bias": [
+   768
+  ],
+  "model.read_head.blocks.0.norm_kv.weight": [
+   768
+  ],
+  "model.read_head.blocks.0.norm_q.bias": [
+   768
+  ],
+  "model.read_head.blocks.0.norm_q.weight": [
+   768
+  ],
+  "model.read_head.blocks.1.attn.in_proj_bias": [
+   2304
+  ],
+  "model.read_head.blocks.1.attn.in_proj_weight": [
+   2304,
+   768
+  ],
+  "model.read_head.blocks.1.attn.out_proj.bias": [
+   768
+  ],
+  "model.read_head.blocks.1.attn.out_proj.weight": [
+   768,
+   768
+  ],
+  "model.read_head.blocks.1.ffn.w1.bias": [
+   3072
+  ],
+  "model.read_head.blocks.1.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.read_head.blocks.1.ffn.w2.bias": [
+   3072
+  ],
+  "model.read_head.blocks.1.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.read_head.blocks.1.ffn.w3.bias": [
+   768
+  ],
+  "model.read_head.blocks.1.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.read_head.blocks.1.norm2.bias": [
+   768
+  ],
+  "model.read_head.blocks.1.norm2.weight": [
+   768
+  ],
+  "model.read_head.blocks.1.norm_kv.bias": [
+   768
+  ],
+  "model.read_head.blocks.1.norm_kv.weight": [
+   768
+  ],
+  "model.read_head.blocks.1.norm_q.bias": [
+   768
+  ],
+  "model.read_head.blocks.1.norm_q.weight": [
+   768
+  ],
+  "model.source_embedding.weight": [
+   3,
+   768
+  ],
+  "model.transformer.final_norm.bias": [
+   768
+  ],
+  "model.transformer.final_norm.weight": [
+   768
+  ],
+  "model.transformer.layers.0.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.0.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.0.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.0.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.0.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.0.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.0.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.0.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.0.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.0.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.0.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.0.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.0.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.0.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.1.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.1.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.1.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.1.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.1.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.1.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.1.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.1.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.1.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.1.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.1.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.1.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.1.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.1.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.2.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.2.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.2.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.2.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.2.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.2.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.2.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.2.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.2.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.2.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.2.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.2.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.2.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.2.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.3.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.3.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.3.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.3.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.3.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.3.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.3.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.3.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.3.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.3.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.3.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.3.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.3.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.3.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.4.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.4.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.4.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.4.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.4.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.4.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.4.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.4.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.4.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.4.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.4.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.4.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.4.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.4.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.5.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.5.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.5.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.5.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.5.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.5.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.5.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.5.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.5.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.5.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.5.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.5.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.5.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.5.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.6.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.6.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.6.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.6.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.6.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.6.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.6.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.6.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.6.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.6.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.6.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.6.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.6.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.6.norm2.weight": [
+   768
+  ],
+  "model.transformer.layers.7.attn.k_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.7.attn.o_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.7.attn.q_proj.weight": [
+   768,
+   768
+  ],
+  "model.transformer.layers.7.attn.v_proj.weight": [
+   96,
+   768
+  ],
+  "model.transformer.layers.7.ffn.w1.bias": [
+   3072
+  ],
+  "model.transformer.layers.7.ffn.w1.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.7.ffn.w2.bias": [
+   3072
+  ],
+  "model.transformer.layers.7.ffn.w2.weight": [
+   3072,
+   768
+  ],
+  "model.transformer.layers.7.ffn.w3.bias": [
+   768
+  ],
+  "model.transformer.layers.7.ffn.w3.weight": [
+   768,
+   3072
+  ],
+  "model.transformer.layers.7.norm1.bias": [
+   768
+  ],
+  "model.transformer.layers.7.norm1.weight": [
+   768
+  ],
+  "model.transformer.layers.7.norm2.bias": [
+   768
+  ],
+  "model.transformer.layers.7.norm2.weight": [
+   768
+  ]
+ }
+}

@@ -1,0 +1,46 @@
+# OmniX: 768 x 8 transformer, 144 M parameters
+_target_: humite.models.lightning_module.OmniXModule
+_convert_: all
+_partial_: true # the dataset configuration is passed at construction
+
+transformer:
+  _target_: humite.models.transformer.TransformerConfig
+  embedding_dim: 768
+  num_layers: 8
+  num_heads: 8
+  mlp_ratio: 4.0
+
+# conditioning codes: 1-10 JetClass jet type, 11-15 COLLIDE-2V process (0 = not given)
+n_condition_codes: 15
+
+# tagging tasks: the JetClass jet type from the class token, and b / c / light for every jet
+# of a COLLIDE-2V event from the jet decoder
+tasks:
+  - { name: jetclass_class, mode: event, num_classes: 10, label: jc_label }
+  - { name: c2v_flavor, mode: per_jet, num_classes: 3 }
+jet_decoder:
+  n_layers: 3
+  num_heads: 8
+
+# attention bias from (ln dR, ln kT, ln z, ln m^2) of every pair of particles
+pair_bias:
+  hidden_dim: 64
+  n_hidden_layers: 3
+  feature_mean: [-1.52, -0.34, -1.61, 0.63]
+  feature_std: [1.01, 1.11, 0.82, 2.22]
+
+optimizer:
+  lr: 1.0e-3
+  weight_decay: 0.005
+  betas: [0.95, 0.999]
+  eps: 1.0e-5
+  lookahead_alpha: 0.25
+  lookahead_k: 16
+# warm-up, constant learning rate, cosine decay from decay_start to total_steps
+schedule:
+  warmup_steps: 4096
+  decay_start: 2457600 # the cap of the trunk run: a constant learning rate until it is stopped
+  total_steps: 2465792
+  min_lr: 5.0e-6
+
+compile: true

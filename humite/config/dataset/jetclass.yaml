@@ -1,0 +1,13 @@
+# JetClass as a member of a training set: one jet per event, in slot 1 of the plan.
+reader: jetclass
+reader_options:
+  window: 1.3 # constituents within this distance of the jet axis in eta and phi are kept
+data_dir: ${oc.env:HUMITE_JETCLASS_DIR,./data/jetclass/}
+files:
+  train: ["${...data_dir}train_100M/*.parquet"]
+  val: ["${...data_dir}val_5M/*.parquet"]
+  test: ["${...data_dir}test_20M/*.parquet"]
+pad_length: 192 # the largest jet has 183 constituents
+source_id: 1
+condition_label: jc_label # the ten jet types: conditioning codes 1-10
+condition_offset: 0

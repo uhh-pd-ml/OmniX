@@ -1,0 +1,19 @@
+# One COLLIDE-2V process as a member of a training set: full events with particles within
+# |eta| <= 4 and anti-kT R = 0.4 jets with pT > 15 GeV and |eta| < 4 in up to 20 jet slots.
+# The training set sets `process` (the file name prefix).
+reader: collide2v
+reader_options:
+  jet_pt_min: 15.0
+  jet_abs_eta_max: 4.0
+  max_jets: 20
+  particle_abs_eta_max: 4.0
+data_dir: ${oc.env:HUMITE_C2V_FULLEVENT_DIR,./data/c2v/}
+process: ???
+files:
+  train: ["${...data_dir}train/${...process}-*.parquet"]
+  val: ["${...data_dir}val/${...process}-*.parquet"]
+  test: ["${...data_dir}test/${...process}-*.parquet"]
+pad_length: 528 # the largest event after the cuts has 521 particles
+source_id: 2
+condition_label: c2v_process # the five processes: conditioning codes 11-15
+condition_offset: 10

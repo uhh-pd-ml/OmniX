@@ -1,0 +1,11 @@
+# The jets-only training set: JetClass alone, with the token design of OmniX.
+_target_: humite.data.config.DataConfig
+defaults:
+  - tokens
+  - /dataset@members.jetclass: jetclass
+  - _self_
+
+max_particles: 183 # the largest JetClass jet
+
+mix_weights: { jetclass: 1 }
+val_mix_weights: { jetclass: 1 }

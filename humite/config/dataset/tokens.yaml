@@ -1,0 +1,62 @@
+# The token design shared by the three training sets: the particle features, the plan and the
+# orders in which a particle's features are generated.
+
+# Seven features per particle. A particle in a jet stores eta and phi relative to its jet axis
+# on a symlog grid; a particle outside every jet (jet_idx 0) stores them in the lab frame on
+# the linear out_of_jet grid.
+particle_features:
+  - { name: pt, binning: log, vocab_size: 1024, value_min: 0.1, value_max: 6000.0 }
+  - name: eta
+    binning: symlog
+    linear_scale: 0.05
+    vocab_size: 512
+    value_min: -5.0
+    value_max: 5.0
+    out_of_jet: { binning: linear, value_min: -5.0, value_max: 5.0 }
+  - name: phi
+    binning: symlog
+    linear_scale: 0.05
+    vocab_size: 512
+    value_min: -3.14159265
+    value_max: 3.14159265
+    out_of_jet: { binning: linear, value_min: -3.14159265, value_max: 3.14159265 }
+  # jet slot: 0 = outside every jet, 1-20 = the jets in order of pT
+  - { name: jet_idx, binning: index, vocab_size: 23, value_min: 0, value_max: 20 }
+  # particle type with charge: h+, h-, h0, photon, e+, e-, mu+, mu-
+  - { name: pid, binning: index, vocab_size: 10, value_min: 0, value_max: 7 }
+  # impact parameters in cm; the sentinel marks particles without a track
+  - { name: d0, binning: symlog, linear_scale: 0.005, sentinel: -999.0, vocab_size: 258, value_min: -25.0, value_max: 25.0 }
+  - { name: dz, binning: symlog, linear_scale: 0.01, sentinel: -999.0, vocab_size: 258, value_min: -60.0, value_max: 60.0 }
+
+# The plan: after the particle count, each of the 20 jet slots holds the jet's pT, rapidity,
+# phi, mass and number of constituents.
+n_jet_slots: 20
+plan:
+  - { name: jet_pt, binning: log, vocab_size: 3487, value_min: 1.0, value_max: 6000.0 }
+  - { name: jet_rapidity, binning: linear, vocab_size: 4002, value_min: -4.0, value_max: 4.0 }
+  - { name: jet_dphi, binning: linear, vocab_size: 3144, value_min: -3.14159265, value_max: 3.14159265 }
+  - { name: jet_m, binning: quadratic, vocab_size: 514, value_min: 0.0, value_max: 1000.0 }
+  - { name: n_const, binning: index, vocab_size: 258, value_min: 0, value_max: 255 }
+
+# Each event draws one of 32 fixed random orders of the seven features. In every order the
+# jet slot comes before the kinematics stored relative to it, and the particle type before the
+# impact parameters.
+feature_order: [jet_idx, pt, eta, phi, pid, d0, dz]
+feature_order_precedence:
+  - [jet_idx, pt]
+  - [jet_idx, eta]
+  - [jet_idx, phi]
+  - [pid, d0]
+  - [pid, dz]
+n_feature_orders: 32
+feature_order_seed: 44
+
+# Half of the training rows carry the kinematics only (the optional features are hidden), and
+# half are given their condition label (jet type or process).
+optional_features: [pid, d0, dz]
+p_all_features: 0.5
+p_condition: 0.5
+
+# SOURCE token: 0 = not given, 1 = JetClass, 2 = COLLIDE-2V
+n_sources: 3
+seed: 44

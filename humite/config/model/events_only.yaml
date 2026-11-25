@@ -1,0 +1,6 @@
+# The events-only model: OmniX without the jet-type task (125 M parameters)
+defaults:
+  - omnix
+
+tasks:
+  - { name: c2v_flavor, mode: per_jet, num_classes: 3 }

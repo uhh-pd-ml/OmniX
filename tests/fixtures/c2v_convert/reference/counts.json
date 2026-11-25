@@ -1,0 +1,46 @@
+{
+ "charged": 1726,
+ "charged_hadrons_eta_corrected": 1684,
+ "constituents_ak4": 941,
+ "constituents_ak8": 137,
+ "d0_beyond_clip": 0,
+ "d0_exact_zero": 1327,
+ "dz_beyond_clip": 0,
+ "dz_exact_zero": 1245,
+ "events_over_pad_reference": 0,
+ "file": "tt0123j_5f_ckm_LO_MLM_leptonic-NEVENT10000-RS29000001.parquet",
+ "flavor_codes_ak4": {
+  "0": 25,
+  "1": 3,
+  "2": 7,
+  "21": 23,
+  "3": 4,
+  "4": 5,
+  "5": 28
+ },
+ "flavor_codes_ak8": {
+  "2": 1,
+  "21": 1,
+  "4": 1
+ },
+ "jets_ak4": 95,
+ "jets_ak8": 3,
+ "max_jets_ak4": 10,
+ "max_jets_ak8": 1,
+ "max_particles": 267,
+ "n_events_dropped_no_particles": 0,
+ "n_events_dropped_weight_0": 85,
+ "n_events_in": 103,
+ "n_written": {
+  "test": 0,
+  "train": 14,
+  "val": 4
+ },
+ "particles_dropped_isrecopu": 116,
+ "particles_dropped_puppi_weight_0": 90,
+ "particles_in": 2377,
+ "particles_kept": 2171,
+ "particles_unknown_pdg": 0,
+ "process": "tt0123j_5f_ckm_LO_MLM_leptonic",
+ "unknown_pdg_ids": []
+}

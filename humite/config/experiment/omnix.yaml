@@ -1,0 +1,30 @@
+# @package _global_
+#
+# OmniX, the paper's main model: one transformer trained on JetClass jets and COLLIDE-2V events.
+#
+# The run has no fixed length. After 4,096 warm-up steps the learning rate stays at 1e-3 and the
+# run is stopped by hand at the validation plateau S. The anneal resumes the step-S checkpoint
+# with model.schedule.decay_start=S and model.schedule.total_steps = trainer.max_steps = 1.2 S.
+# The paper model: S = 1,376,256, end 1,654,784 steps of 8 GPUs x 128 events.
+defaults:
+  - override /dataset: omnix
+  - override /model: omnix
+
+experiment_name: omnix
+
+trainer:
+  limit_val_batches: 72 # per GPU: 32 JetClass batches and 8 of each COLLIDE-2V process
+
+callbacks:
+  best_jetclass_class:
+    _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    dirpath: ${output_dir}/checkpoints
+    filename: best_jetclass_class_{epoch:03d}
+    monitor: val/cls_jetclass_class_auroc
+    mode: max
+  best_c2v_flavor:
+    _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    dirpath: ${output_dir}/checkpoints
+    filename: best_c2v_flavor_{epoch:03d}
+    monitor: val/cls_c2v_flavor_auroc
+    mode: max
